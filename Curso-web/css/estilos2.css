@@ -1,0 +1,272 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+/*=================================================================
+                            ETIQUETAS
+====================================================================*/
+
+body{
+    
+    font-family:'Asap';
+    background:#f2f2f2;
+}
+
+a{
+    display:inline-block;
+    text-decoration: none;
+    color:#000;
+    
+}
+
+section{
+    position: relative;
+}
+
+
+
+
+
+/*======================================================================
+                                 CLASES
+=====================================================================*/
+
+
+.sin-pading{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+
+.contenedor-cuadrado img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /*solo videos e imagenes*/
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.contenedor{
+    width:1170px;
+    padding:0 15px 0 15px;
+    /*CENTRAMOS EL CONTENEDOR*/
+    margin:0 auto;
+}
+
+.columna{
+    padding-left: 15px;
+    padding-right: 15px;
+    align-content:center;
+   
+
+}
+
+.columna-100{
+    width: 100%;
+}
+
+.columna-50{
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+   
+}
+
+
+
+.columna-33{
+    width: 33%;
+}
+
+.columna-25{
+    width: 25%;
+}
+
+
+.banner-home{
+    width:100%;
+    height: auto;
+    /*arreglamos el alineado si colocamos imagen abajo*/
+    display: block;
+}
+
+.cabecera{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 1000;
+}
+
+.cabecera .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+.cabecera .logo{
+    width:80px;
+    height:80px;
+    vertical-align:middle;
+    border:1px solid #f2f2f2;
+    border-radius:100%;
+}
+
+.cabecera .menu a{
+    padding:10px;
+    vertical-align:middle;
+    color:#f2f2f2;
+    font-size:13px;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    font-weight: bold;
+    
+    
+}
+
+.cabecera .ham{
+    color:#f2f2f2;
+    font-size:40px;
+}
+
+.contenedor-cuadrado{
+    width:100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+
+.contenido-cuadrado{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top:-100%;
+    color:#f2f2f2;
+   
+}
+
+
+/*
+
+.contenedor-full{
+    width: 100%;
+    padding: 0 15px;
+}
+*/
+
+.centrar-texto{
+    text-align: center;
+
+}
+
+.fila{
+    display:flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+}
+
+.filas{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.importante{
+    font-style: italic;
+}
+
+.justificar-texto{
+    text-align: justify;
+}
+
+
+.seccion{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.cabecera .menu a:hover{
+    text-decoration: underline;
+
+}
+
+.boton{
+    font-size: 15px;
+    padding:10px 30px;
+    text-decoration: none;
+    text-align: center;
+    border:1px solid #003E1F;
+    border-radius: 15%;
+    text-transform: uppercase;
+    color:#678B5F;
+    background-color:#D0E562;
+}
+
+.boton.boton-carta{
+    
+    border:1px solid #678B5F;
+   
+    
+}
+
+/*====================================================================
+                         ID
+======================================================================*/
+ /*
+#lacarta{
+   
+    background-image: url("../img/home.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    
+    
+}
+*/
+
+
+#banner .contenedor{
+    /*A las secciones le damos posicion relativa*/
+    margin:0;
+    position:absolute;
+    top:35%;
+    left:30%;
+    right: 40%;
+}
+
+#banner .contenedor h1{
+    border-bottom:1px solid #697E59;
+    color: #f2f2f2;
+    font-size:30px;
+}
+
+
+
+#banner p{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    line-height: 2;
+}
